@@ -1,143 +1,158 @@
 /* ===== Global Styles ===== */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 
 body {
-  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f9fafb;
-  color: #1f2937;
-  padding-top: 70px; /* offset for fixed header */
+   font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+   line-height: 1.6;
+   background-color: #f9fafb;
+   color: #1f2937;
+   margin-top: 150px;
+   /* offset for fixed header */
 }
 
 /* ===== Header & Navigation ===== */
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: #1f2937; /* dark gray/blue */
-  color: #fff;
-  padding: 1rem 2rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-  z-index: 1000;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background: #1f2937;
+   /* dark gray/blue */
+   color: #fff;
+   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+   padding: 1rem 2rem;
+   z-index: 1000;
 }
 
 header h1 {
-  font-size: 1.8rem;
+   font-size: 1.8rem;
 }
 
 header p {
-  font-size: 1rem;
-  color: #d1d5db; /* lighter gray */
+   font-size: 1rem;
+   color: #d1d5db;
+   /* lighter gray */
 }
 
 nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-  margin-top: 0.5rem;
+   list-style: none;
+   display: flex;
+   gap: 1.5rem;
+   margin-top: 0.5rem;
 }
 
 nav a {
-  text-decoration: none;
-  color: #f9fafb;
-  font-weight: 500;
-  transition: color 0.2s ease;
+   text-decoration: none;
+   color: #f9fafb;
+   font-weight: 500;
+   transition: color 0.2s ease;
 }
 
 nav a:hover {
-  color: #60a5fa; /* blue highlight */
+   color: #60a5fa;
+   /* blue highlight */
 }
 
 /* ===== Main Sections ===== */
 main {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 0 1rem;
+   max-width: 900px;
+   margin: 2rem auto;
+   padding: 0 1rem;
 }
 
 section {
-  margin-bottom: 3rem;
+   scroll-margin-top: 150px;
+   margin-bottom: 3rem;
 }
 
 section h2 {
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
-  border-bottom: 2px solid #e5e7eb;
-  padding-bottom: 0.3rem;
+   font-size: 1.6rem;
+   margin-bottom: 1rem;
+   border-bottom: 2px solid #e5e7eb;
+   padding-bottom: 0.3rem;
 }
 
 /* About */
 #about p {
-  margin-bottom: 1rem;
+   margin-bottom: 1rem;
 }
 
 /* Projects */
 #projects ul {
-  list-style: none;
-  padding-left: 0;
+   list-style: none;
+   padding-left: 0;
 }
 
 #projects li {
-  background: #fff;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  transition: box-shadow 0.2s ease;
+   background: #fff;
+   border: 1px solid #e5e7eb;
+   border-radius: 8px;
+   padding: 1rem;
+   margin-bottom: 1rem;
+   transition: box-shadow 0.2s ease;
 }
 
 #projects li:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Documents */
 #docs ul {
-  list-style: disc;
-  padding-left: 1.5rem;
+   list-style: disc;
+   padding-left: 1.5rem;
 }
 
 #docs a {
-  color: #2563eb;
-  text-decoration: none;
+   color: #2563eb;
+   text-decoration: none;
 }
 
 #docs a:hover {
-  text-decoration: underline;
+   text-decoration: underline;
 }
 
 /* Contact */
 #contact p {
-  margin-bottom: 0.5rem;
+   margin-bottom: 0.5rem;
 }
 
 #contact a {
-  color: #2563eb;
-  text-decoration: none;
+   color: #2563eb;
+   text-decoration: none;
 }
 
 #contact a:hover {
-  text-decoration: underline;
+   text-decoration: underline;
 }
 
 /* ===== Footer ===== */
 footer {
-  text-align: center;
-  padding: 1rem;
-  background: #f3f4f6;
-  color: #6b7280;
-  font-size: 0.9rem;
-  border-top: 1px solid #e5e7eb;
+   text-align: center;
+   padding: 1rem;
+   background: #f3f4f6;
+   color: #6b7280;
+   font-size: 0.9rem;
+   border-top: 1px solid #e5e7eb;
 }
 
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
+   nav ul {
+      flex-direction: column;
+      gap: 0.5rem;
+   }
+}
+
+.stickyTop {
+   position: sticky;
+   top: 0;
+}
+
+.stickyBottom {
+   position: sticky;
+   top: 0;
 }
