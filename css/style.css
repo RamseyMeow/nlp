@@ -10,7 +10,6 @@ body {
    line-height: 1.6;
    background-color: #f9fafb;
    color: #1f2937;
-   margin-top: 150px;
    /* offset for fixed header */
 }
 
@@ -140,7 +139,7 @@ footer {
 }
 
 /* ===== Responsive ===== */
-@media (max-width: 768px) {
+@media (max-width: 750px) {
    nav ul {
       flex-direction: column;
       gap: 0.5rem;
@@ -156,3 +155,4 @@ footer {
    position: sticky;
    top: 0;
 }
+
